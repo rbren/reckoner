@@ -85,3 +85,13 @@ Enjoying Reckoner? Check out some of our other projects:
 * [rbac-manager](https://github.com/FairwindsOps/rbac-manager) - Simplify the management of RBAC in your Kubernetes clusters
 
 Or [check out the full list](https://www.fairwinds.com/open-source-software?utm_source=reckoner&utm_medium=reckoner&utm_campaign=reckoner)
+
+
+
+floo
+
+
+
+
+bloob
+
