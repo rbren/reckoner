@@ -1,3 +1,5 @@
+hello
+
 <div align="center">
     <img src="img/reckoner-logo.svg" height="120" alt="Reckoner" style="padding-bottom: 20px" />
     <br>
@@ -29,59 +31,3 @@ Check out the [documentation at docs.fairwinds.com](https://reckoner.docs.fairwi
 
 In course.yml, write:
 
-```yaml
-namespace: default
-charts:
-  grafana:
-    namespace: grafana
-    values:
-      image:
-        tag: "6.2.5"
-  polaris-dashboard:
-    namespace: polaris-dashboard
-    repository:
-      git: https://github.com/FairwindsOps/charts
-      path: stable
-    chart: polaris
-```
-
-Then run:
-
-```shell
-reckoner plot course.yml --run-all
-```
-
-Grafana and Polaris should now be installed on your cluster!
-
-## Importing Existing Releases
-
-> Importing existing releases is experimental and the result should be reviewed.
-
-If you're already using Helm but want to start using `reckoner`, you can use `reckoner import` to facilitate your migration.
-
-We recommend carefully examining the output of a `reckoner diff` before relying on any imported course.yml definitions.
-
-<!-- Begin boilerplate -->
-## Join the Fairwinds Open Source Community
-
-The goal of the Fairwinds Community is to exchange ideas, influence the open source roadmap,
-and network with fellow Kubernetes users.
-[Chat with us on Slack](https://join.slack.com/t/fairwindscommunity/shared_invite/zt-2na8gtwb4-DGQ4qgmQbczQyB2NlFlYQQ)
-or
-[join the user group](https://www.fairwinds.com/open-source-software-user-group) to get involved!
-
-<a href="https://insights.fairwinds.com/auth/register/">
-  <img src="https://www.fairwinds.com/hubfs/Doc_Banners/Fairwinds_OSS_User_Group_740x125_v6.png"
-  alt="Love Fairwinds Open Source? Automate Fairwinds Open Source for free with Fairwinds Insights. Click to learn more" />
-</a>
-
-## Other Projects from Fairwinds
-
-Enjoying Reckoner? Check out some of our other projects:
-* [Polaris](https://github.com/FairwindsOps/Polaris) - Audit, enforce, and build policies for Kubernetes resources, including over 20 built-in checks for best practices
-* [Goldilocks](https://github.com/FairwindsOps/Goldilocks) - Right-size your Kubernetes Deployments by compare your memory and CPU settings against actual usage
-* [Pluto](https://github.com/FairwindsOps/Pluto) - Detect Kubernetes resources that have been deprecated or removed in future versions
-* [Nova](https://github.com/FairwindsOps/Nova) - Check to see if any of your Helm charts have updates available
-* [rbac-manager](https://github.com/FairwindsOps/rbac-manager) - Simplify the management of RBAC in your Kubernetes clusters
-
-Or [check out the full list](https://www.fairwinds.com/open-source-software?utm_source=reckoner&utm_medium=reckoner&utm_campaign=reckoner)
