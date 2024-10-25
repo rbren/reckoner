@@ -31,3 +31,8 @@ Check out the [documentation at docs.fairwinds.com](https://reckoner.docs.fairwi
 
 In course.yml, write:
 
+
+
+
+foobar
+
